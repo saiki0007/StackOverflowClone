@@ -1,0 +1,21 @@
+.related-tags {
+  ul {
+    li {
+      margin: 4px 0;
+    }
+  }
+}
+.related-tags button, .comments button {
+  border: none;
+  background: none;
+  margin: 5px 0;
+  color: #0077cc;
+  &:hover {
+    color: #0095ff;
+  }
+}
+@media (max-width: 1000px) {
+  .related-tags {
+    display: none;
+  }
+}

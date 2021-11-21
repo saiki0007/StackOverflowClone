@@ -1,0 +1,122 @@
+.users__list {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 15px;
+  margin-top: 20px;
+}
+.users__item {
+  position: relative;
+  &:hover .users__item-full  {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    width: 300px;
+  }
+}
+.users__item-preview {
+  display: flex;
+}
+.users__preview-name a {
+  font-size: 14px;
+  color: #0077cc;
+}
+.users__preview-details,
+.users__full-header-details {
+  margin-left: 9px;
+}
+.users__preview-reputation {
+  font-weight: bold;
+  font-size: 12px;
+  margin-right: 2px;
+  color: #6a737c;
+}
+.users__item img {
+  border-radius: 3px;
+}
+.users__preview-location {
+  font-size: 12px;
+  color: #6a737c;
+  margin-bottom: 2px;
+}
+.users__full-header {
+  display: flex;
+  margin-bottom: 5px;
+}
+.users__item-full {
+  opacity: 0;
+  visibility: hidden;
+  background-color: #535A60;
+  color: #e4e6e8;
+  font-size: 11px;
+  position: absolute;
+  top: -45px;
+  left: 0;
+  width: 0;
+  height: 0;
+  padding: 10px;
+  border-radius: 3px;
+  z-index: 1000;
+  margin-bottom: 15px;
+  transition: opacity .15s;
+  a {
+    color: #b3d3ea;
+    &:hover {
+      color: #e4e6e8;
+    }
+  }
+}
+.users__full-header-name a {
+  color: #e4e6e8;
+  font-size: 19px;
+  transition: all .1s ease-in-out;
+}
+.users__full-body a.post-tag {
+  background: none;
+  padding: 0;
+}
+.users__full-body-desc {
+  margin-bottom: 5px;
+  img {
+    display: none;
+  }
+  h1, h2, h3, h4, {
+    font-size: 11px;
+    margin: 0;
+  }
+  pre, code {
+    color: #e4e6e8;
+  }
+}
+.users__full-header-website a {
+  word-break: break-word;
+}
+.users__full-body {
+  max-height: 68px;
+  overflow-y: auto;
+}
+.users__preview-avatar {
+  width: 48px;
+  height: 48px;
+}
+.users__full-avatar {
+  width: 64px;
+  height: 64px;
+}
+
+@media (max-width: 992px) {
+  .users__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .users__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .users__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

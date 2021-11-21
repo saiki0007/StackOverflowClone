@@ -1,0 +1,32 @@
+.question {
+  &__user-info {
+    box-sizing: border-box;
+    padding: 5px 6px 7px 7px;
+    color: #6a737c;
+    background-color: #e1ecf4;
+    border-radius: 3px;
+    margin: 4px 0;
+    width: fit-content;
+    margin-left: auto;
+  }
+  &__user-action-time {
+    margin-top: 1px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    color: #6a737c;
+    .relativetime {
+      margin-left: 4px;
+    }
+  }
+  &__user-details {
+    margin-left: 8px;
+    a {
+      color: #0077cc;
+    }
+    .badgecount {
+      font-weight: 400;
+      font-size: 12px;
+      color: #848d95;
+    }
+  }
+}

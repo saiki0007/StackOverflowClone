@@ -1,0 +1,55 @@
+.sidebar {
+  width: 164px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  height: calc(100vh - 50px);
+  padding-top: 24px;
+  border-right: 1px solid #d6d9dc;
+  background-color: #fff;
+}
+
+.sidebar__public-item {
+  text-transform: uppercase;
+  color: #6a737c;
+  font-size: 11px;
+  margin: 16px 0 4px 8px;
+}
+
+.sidebar__nav-link {
+  display: block;
+  padding: 4px;
+  padding-left: 30px;
+  line-height: 1.8;
+  font-size: 13px;
+  color: #535a60;
+  &:visited {
+    color: #535a60;
+  }
+  &:hover {
+    color: #0c0d0e;
+  }
+  &.sidebar__link-active {
+    font-weight: bold;
+    background: #eff0f1;
+    color: #0c0d0e;
+    border-right: 3px solid #f48024;
+  }
+}
+
+.home-link {
+  padding-left: 8px;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    transform: translateX(-164px);
+    transition: transform .3s ease;
+  }
+  .page__content {
+    width: 100%;
+  }
+}

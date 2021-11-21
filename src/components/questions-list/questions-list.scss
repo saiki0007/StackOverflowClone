@@ -1,0 +1,24 @@
+.questions__list {
+  border-top: 1px solid #d6d9dc;
+  margin-left: -24px;
+  li {
+    display: flex;
+    border-bottom: 1px solid #eff0f1;
+    padding: 12px 8px;
+  }
+}
+
+@media (max-width: 992px) {
+  .questions__list {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .questions__list {
+    li {
+      display: block;
+      padding: 12px 0;
+    }
+  }
+}

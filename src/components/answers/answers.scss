@@ -1,0 +1,20 @@
+.question__mainbar {
+  .pagination {
+    margin: 15px 0 0;
+  }
+}
+.answers {
+  margin-top: 23px;
+  .total-items {
+    font-size: 18px;
+  }
+}
+.answers__item {
+  padding: 18px 0;
+}
+.answers__item:not(:last-child) {
+  border-bottom: 1px solid #e4e6e8;
+}
+.answer__accepted svg {
+  fill:#48a868;
+}

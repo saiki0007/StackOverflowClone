@@ -1,0 +1,150 @@
+.user__info-avatar-block {
+  padding: 15px;
+  box-shadow: inset 0 9em 0 #eff0f1;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  height: fit-content;
+}
+.user__info__avatar {
+  margin: 10px auto 5px;
+  width: 128px;
+  height: 128px;
+  img {
+    border-radius: 3px;
+  }
+}
+.user__info-reputation {
+  display: flex;
+  margin: 6px 0;
+  justify-content: center;
+  div {
+    color: #0c0d0e;
+    margin: 4px;
+    font-size: 21px;
+  }
+  span {
+    color: #6a737c;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+  }
+}
+.user__info-budges {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  .badge-block {
+    padding: 4px 6px 3px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    font-size: 12px;
+    &:nth-child(1) {
+      background-color: #fff4d1;
+      border-color: #f1b600;
+    }
+    &:nth-child(2) {
+      background-color: #e8e8e8;
+      border-color: #9a9c9f;
+    }
+    &:nth-child(3) {
+      background-color: #f2e9e1;
+      border-color: #ab825f;
+    }
+    .user-badge {
+      margin-right: 7px;
+    }
+  }
+}
+
+pre, .user__info-about-block {
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px	;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #CCCCCC;
+  }
+}
+
+.user__info-about {
+  a:not(.post-tag) {
+    text-decoration: underline;
+    color: #0064bd;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  code {
+    white-space: inherit;
+  }
+}
+.user__info-about-block {
+  height: 278px;
+  overflow: auto;
+  margin: 0 16px;
+  padding-right: 16px;
+}
+.user__info-name {
+  font-weight: 700;
+  font-size: 27px;
+  margin-bottom: 16px;
+}
+.user__info-number {
+  font-weight: 700;
+  font-size: 17px;
+  color: #0c0d0e;
+}
+.user__info-count-block {
+  margin-right: 12px;
+  line-height: 1.35;
+}
+.user__info-label,
+.user__info-item span {
+  color: #3c4146;
+  font-size: 13px;
+}
+.user__info-posts {
+  margin-bottom: 16px;
+}
+.user__info-item {
+  margin: 4px 0;
+  svg {
+    fill: #9199a1;
+    margin-right: 8px;
+  }
+}
+.user__info-details-block {
+  max-width: 316px;
+  min-width: 220px;
+  flex: none;
+}
+
+@media (max-width: 1200px) {
+  .user__info-details-block {
+    max-width: none;
+    min-width: auto;
+    flex: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .user__info-block {
+    flex-wrap: wrap;
+    > div {
+      flex-grow: 1;
+      margin-bottom: 16px;
+    }
+    .user__info-about-block {
+      margin: 0 0 16px;
+    }
+    .user__info-budges {
+      justify-content: center;
+    }
+  }
+}

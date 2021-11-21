@@ -1,0 +1,20 @@
+.error-indicator {
+  width: 100%;
+  text-align: center;
+  padding: 25px;
+}
+.error-indicator__message {
+  color: #0c0d0e;
+  font-size: 17px;
+}
+.error-indicator__adm {
+  color: #6a737c;
+  font-size: 11px;
+  margin-top: 2px;
+}
+.error-indicator__oops {
+  margin-bottom: 5px;
+  font-size: 27px;
+  font-weight: bold;
+  color: #0c0d0e;
+}

@@ -1,0 +1,40 @@
+.pagination {
+  margin: 35px 0 11px;
+  justify-content: space-between;
+  span {
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 0 8px;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid #d6d9dc;
+    font-size: 13px;
+    line-height: 1.92307692;
+    color: #3c4146;
+    cursor: pointer;
+  }
+  .is-selected {
+    border-color: transparent;
+    background-color: #f48024;
+    color: #fff;
+    cursor: default;
+  }
+  .pag-ellipsis {
+    cursor: default;
+    border: none;
+  }
+  .per-page {
+    display: inline;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .pagination {
+    display: block;
+    .pagination-list {
+      margin-bottom: 12px;
+    }
+  }
+}

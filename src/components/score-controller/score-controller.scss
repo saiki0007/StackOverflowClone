@@ -1,0 +1,20 @@
+.vote-btn:focus {
+  outline: none;
+}
+.vote-btn svg {
+  fill: #bbc0c4;
+}
+.vote-btn:active svg {
+  fill: #f48024;
+}
+.vote-count {
+  font-size: 21px;
+}
+.question__votecell {
+  color: #6a737c;
+  text-align: center;
+  padding-right: 16px;
+}
+.vote-label {
+  font-size: 12px;
+}

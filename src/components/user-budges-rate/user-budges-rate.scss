@@ -1,0 +1,29 @@
+.reputation-score {
+  font-weight: bold;
+  font-size: 12px;
+  margin-right: 2px;
+}
+.user-badge {
+  display: inline-block;
+  width: .5em;
+  height: .5em;
+  border-radius: 25px;
+  margin-right: 3px;
+  margin-left: 2px;
+  &1{
+    background-color: #FFCC01;
+  }
+  &2{
+    background-color:#B4B8BC;
+  }
+  &3{
+    background-color:#D1A684;
+  }
+}
+
+.badge-block {
+  margin-right: 3px;
+  margin-left: 2px;
+  display: flex;
+  align-items: center;
+}
