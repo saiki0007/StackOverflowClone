@@ -10,7 +10,7 @@ This project is made using React and Redux. It uses the StackExchange API to get
 ![image](https://user-images.githubusercontent.com/20417069/154744973-62cda5d2-9679-4f4f-ac2d-001e2dc1c484.png)
 
  
-## Available Scripts
+## Steps to run the app
 
 In the project directory, you can run:
 
