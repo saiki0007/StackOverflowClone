@@ -1,4 +1,5 @@
 # StackOverflowClone
+This project is made using React and Redux. It uses the StackExchange API to get the data (questions, answers, tags, votes, etc.,)
 
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/20417069/154744648-ce35dff9-69d7-4253-87c0-c729a248f18b.png)
